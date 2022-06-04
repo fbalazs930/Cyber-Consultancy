@@ -13,72 +13,165 @@
         defer></script>
     <link rel="stylesheet" href="./styles/global/global.css" />
     <link rel="stylesheet" href="./styles/index/index.css" />
+    <link rel="stylesheet" href="./styles/services/services.css" />
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-<script src="script.js" defer></script>
+    <script src="script.js" defer></script>
 </head>
 
 <body>
-    <div class="home">
-        <nav class="navbar fixed-top navbar-expand-md navbar-dark">
-            <div class="container pt-4">
-                <a class="navbar-brand ps-2" href="#">
-                    <img class="img-fluid logo" src="./images/logo.svg" alt="logo">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <div class="menu-icon fas fa-bars text-light fs-2 fw-light"></div>
-                </button>
+    <!-- Navbar -->
+    <nav class="navbar fixed-top navbar-expand-md navbar-dark">
+        <div class="container pt-4">
+            <a class="navbar-brand ps-2" href="#">
+                <img class="img-fluid logo" src="./images/logo.svg" alt="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <div class="menu-icon fas fa-bars text-light fs-2 fw-light"></div>
+            </button>
 
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <div class="mx-auto"></div>
-                    <ul class="navbar-nav align-items-center">
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="/">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="/services.html">Services</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="#">Partners</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="#">
-                                <div class="btn btn btn-primary">
-                                    Contact
-                                </div>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="mx-auto"></div>
+                <ul class="navbar-nav align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#partners">Partners</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#contact">
+                            <div class="btn btn btn-primary">
+                                Contact
+                            </div>
+                        </a>
+                    </li>
+                </ul>
             </div>
-        </nav>
-        <div class="hero pt-5">
-            <div class="container-fluid pt-4">
-                <div class="row align-items-center py-4 px-2" style="min-height: 80vh">
-                    <div class="col-0 col-lg-1"></div>
-                    <div class="col-12 col-lg-5">
-                        <div class="d-flex justify-content-center">
-                            <div class="d-flex flex-column gap-5">
-                                <h1>IT consulting and security</h1>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur
-                                    adipiscing elit. Mauris pretium vel nisi vel dictum
-                                </p>
-                                <div>
-                                    <button class="btn btn-primary">Learn more</button>
-                                </div>
+        </div>
+    </nav>
+    <!-- Home -->
+    <div class="home" id="home">
+        <div class="container-fluid pt-5">
+            <div class="row align-items-center px-2 pt-5">
+                <div class="col-0 col-lg-1"></div>
+                <div class="col-12 col-lg-5">
+                    <div class="d-flex justify-content-center">
+                        <div class="d-flex flex-column gap-5">
+                            <h1>IT consulting and security</h1>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit. Mauris pretium vel nisi vel dictum
+                            </p>
+                            <div>
+                                <a href="#services">
+                                    <div class="btn btn-primary">
+                                        Learn more
+                                    </div>
+                                </a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-lg-6">
-                        <div>
-                            <img src="./images/work.svg" alt="work" class="img-fluid work-img d-none d-lg-block">
-                            <img src="./images/line-long.svg" alt="line" class="img-fluid line d-none d-lg-block">
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div>
+                        <img src="./images/work.svg" alt="work" class="img-fluid work-img d-none d-lg-block">
+                        <img src="./images/line-long.svg" alt="line" class="img-fluid line d-none d-lg-block">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Services -->
+    <div class="services py-5" id="services">
+        <div class="container px-4">
+            <div class="d-flex flex-column gap-5 align-items-center">
+                <div class="row">
+                    <div class="col-12">
+                        <h1 class="text-center">Services</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <div class="d-flex flex-column gap-5">
+                            <img src="./images/line-short.svg" alt="line" class="img-fluid line">
+                            <p>Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna
+                                aliqua. Ut enim ad minim veniam, quis
+                                nostrud exercitation ullamco laboris nisi
+                                ut aliquip ex ea commodo consequat.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="d-flex justify-content-center">
+                            <img src="./images/shield.svg" alt="shield" class="img-fluid image">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-6 order-2 order-md-1">
+                        <div class="d-flex justify-content-center">
+                            <img src="./images/key.svg" alt="key" class="img-fluid image">
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 order-1 order-md-2">
+                        <div class="d-flex flex-column gap-5">
+                            <img src="./images/line-short.svg" alt="line" class="img-fluid line">
+                            <p>Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna
+                                aliqua. Ut enim ad minim veniam, quis
+                                nostrud exercitation ullamco laboris nisi
+                                ut aliquip ex ea commodo consequat.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <div class="d-flex flex-column gap-5">
+                            <img src="./images/line-short.svg" alt="line" class="img-fluid line">
+                            <p>Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna
+                                aliqua. Ut enim ad minim veniam, quis
+                                nostrud exercitation ullamco laboris nisi
+                                ut aliquip ex ea commodo consequat.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="d-flex justify-content-center">
+                            <img src="./images/laptop.svg" alt="laptop" class="img-fluid image">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-6 order-2 order-md-1">
+                        <div class="d-flex justify-content-center">
+                            <img src="./images/lock.svg" alt="lock" class="img-fluid image">
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 order-1 order-md-2">
+                        <div class="d-flex flex-column gap-5">
+                            <img src="./images/line-short.svg" alt="line" class="img-fluid line">
+                            <p>Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna
+                                aliqua. Ut enim ad minim veniam, quis
+                                nostrud exercitation ullamco laboris nisi
+                                ut aliquip ex ea commodo consequat.
+                            </p>
                         </div>
                     </div>
                 </div>

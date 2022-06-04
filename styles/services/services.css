@@ -1,20 +1,27 @@
 .services {
   min-height: 100vh;
   background: #050040;
-  background: linear-gradient(20deg, rgb(5, 0, 64) 60%, rgb(73, 9, 147) 100%);
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow-x: hidden;
 }
-
-.hero {
-  min-height: 100vh;
+.services .image {
+  width: 17rem;
+}
+.services .line {
+  width: 8rem;
+}
+.services .row {
   width: 70vw;
-  margin: 0 auto;
 }
-.hero .img {
-  width: 20rem;
+@media only screen and (max-width: 990px) {
+  .services .row {
+    width: 80vw;
+  }
 }
-.hero .line {
-  width: 10rem;
+@media only screen and (max-width: 380px) {
+  .services .row {
+    width: 90vw;
+  }
 }/*# sourceMappingURL=services.css.map */

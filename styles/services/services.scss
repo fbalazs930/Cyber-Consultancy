@@ -1,19 +1,23 @@
 .services {
     min-height: 100vh;
     background: #050040;
-    background: linear-gradient(20deg, rgba(5, 0, 64, 1) 60%, rgba(73, 9, 147, 1) 100%);
     display: flex;
     align-items: center;
     justify-content: center;
-}
-.hero {
-    min-height: 100vh;
-    width: 70vw;
-    margin:0 auto;
-    .img {
-        width: 20rem;
+    overflow-x: hidden;
+    .image{
+        width: 17rem;
     }
     .line{
-        width: 10rem;
+        width: 8rem;
+    }
+    .row{
+        width: 70vw;
+        @media only screen and (max-width:990px){
+            width: 80vw;
+        }
+        @media only screen and (max-width:380px){
+            width: 90vw;
+        }
     }
 }

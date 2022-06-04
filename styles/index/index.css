@@ -1,24 +1,26 @@
-.home {
+body {
   min-height: 100vh;
   background: rgb(5, 0, 64);
-  background: linear-gradient(20deg, rgb(5, 0, 64) 60%, rgb(73, 9, 147) 100%);
 }
 
-.hero {
+.home {
   min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   color: #fff;
   overflow-x: hidden;
+  background: linear-gradient(20deg, rgb(5, 0, 64) 60%, rgb(73, 9, 147) 100%);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
 }
-.hero .work-img {
+.home .work-img {
   position: relative;
   right: -150px;
   width: 38rem;
   float: left;
 }
-.hero .line {
+.home .line {
   position: relative;
   top: -0.1vw;
   right: 30px;

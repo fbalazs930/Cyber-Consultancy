@@ -7,7 +7,9 @@ html {
     }
     font-family: "Poppins";
     letter-spacing: 1.5px;
-    color: #fff;
+    & > * {
+        color: #fff;
+    }
     .logo {
         width: clamp(8rem, 22vw, 15rem);
     }
