@@ -44,7 +44,7 @@ html {
             font-size: clamp(0.85rem, 2.5vw, 1.25rem);
         }
     }
-    @media only screen and (orientation: landscape) and (max-height:600px) {
+    @media only screen and (max-height:600px) and (max-width:992px){
         .navbar {
             .navbar-collapse {
                 min-height: 45vh;
@@ -55,7 +55,7 @@ html {
             }
         }
     }
-    @media only screen and (orientation: landscape) and (max-height:360px) {
+    @media only screen and (max-height:360px) and (max-width:992px){
         .navbar {
             .navbar-collapse {
                 min-height: 45vh;

@@ -27,13 +27,13 @@ body {
     .text{
         gap:2.25rem;
     }
-    @media only screen and (orientation: landscape) and (max-height: 550px) {
+    @media only screen and (max-height: 550px) {
         padding:3rem 1rem;
         .text {
             gap: 1rem;
         }
     }
-    @media only screen and (orientation: landscape) and (max-height: 350px) {
+    @media only screen and (max-height: 350px) {
         .text {
             gap: .5rem;
         }
