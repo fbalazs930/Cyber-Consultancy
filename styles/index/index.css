@@ -1,0 +1,26 @@
+.home {
+  min-height: 100vh;
+  background: rgb(5, 0, 64);
+  background: linear-gradient(20deg, rgb(5, 0, 64) 60%, rgb(73, 9, 147) 100%);
+}
+
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  overflow-x: hidden;
+}
+.hero .work-img {
+  position: relative;
+  right: -150px;
+  width: 38rem;
+  float: left;
+}
+.hero .line {
+  position: relative;
+  top: -0.1vw;
+  right: 30px;
+  width: 30rem;
+}/*# sourceMappingURL=index.css.map */

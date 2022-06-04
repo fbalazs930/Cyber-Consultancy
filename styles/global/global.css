@@ -1,0 +1,26 @@
+html {
+  font-family: "Poppins";
+  letter-spacing: 1.5px;
+  color: #fff;
+}
+html h1 {
+  font-size: clamp(1.5rem, 5vw, 3.25rem);
+}
+html p {
+  font-size: clamp(0.75rem, 1vw, 1rem);
+}
+html .logo {
+  width: clamp(8rem, 22vw, 15rem);
+}
+html .btn {
+  background-color: #7423f7;
+  border: none;
+  padding: 0.55rem 1.5rem;
+  border-radius: 30px;
+}
+html .navbar .navbar-toggler {
+  border: none;
+}
+html .navbar .navbar-toggler:focus {
+  box-shadow: none;
+}/*# sourceMappingURL=global.css.map */
