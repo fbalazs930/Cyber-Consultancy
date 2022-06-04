@@ -40,25 +40,4 @@ html .navbar .navbar-collapse ul {
 }
 html .services p {
   font-size: clamp(0.85rem, 2.5vw, 1.25rem);
-}
-@media only screen and (max-height: 600px) and (max-width: 992px) {
-  html .navbar .navbar-collapse {
-    min-height: 45vh;
-  }
-  html .navbar .navbar-collapse ul {
-    gap: 1rem;
-    font-size: 1.15rem;
-  }
-}
-@media only screen and (max-height: 360px) and (max-width: 992px) {
-  html .navbar .navbar-collapse {
-    min-height: 45vh;
-  }
-  html .navbar .navbar-collapse ul {
-    gap: 2rem;
-    flex-direction: row;
-    justify-content: center;
-    padding-top: 3rem;
-    font-size: 1.15rem;
-  }
 }/*# sourceMappingURL=global.css.map */

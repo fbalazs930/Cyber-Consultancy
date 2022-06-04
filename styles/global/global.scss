@@ -24,10 +24,10 @@ html {
         padding: 0.55rem 1.5rem;
         border-radius: 30px;
         font-weight: 600;
-        font-size: clamp(0.85rem, 1.5vw, 1.2rem);
+        font-size: clamp(.85rem, 1.5vw, 1.2rem);
     }
     .navbar {
-        transition: all 0.3s;
+        transition: all .3s;
         .navbar-toggler {
             border: none;
             &:focus {
@@ -42,31 +42,6 @@ html {
     .services {
         p {
             font-size: clamp(0.85rem, 2.5vw, 1.25rem);
-        }
-    }
-    @media only screen and (max-height:600px) and (max-width:992px){
-        .navbar {
-            .navbar-collapse {
-                min-height: 45vh;
-                ul {
-                    gap: 1rem;
-                    font-size: 1.15rem;
-                }
-            }
-        }
-    }
-    @media only screen and (max-height:360px) and (max-width:992px){
-        .navbar {
-            .navbar-collapse {
-                min-height: 45vh;
-                ul {
-                    gap: 2rem;
-                    flex-direction: row;
-                    justify-content: center;
-                    padding-top: 3rem;
-                    font-size: 1.15rem;
-                }
-            }
         }
     }
 }
