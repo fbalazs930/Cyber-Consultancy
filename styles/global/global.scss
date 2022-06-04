@@ -1,6 +1,6 @@
 html {
     h1 {
-        font-size: clamp(1.5rem, 5vw, 3.75rem);
+        font-size: clamp(2rem, 5vw, 3.75rem);
     }
     h2 {
         font-size: clamp(1.75rem, 5vw, 2.5rem);
@@ -9,7 +9,7 @@ html {
         font-size: clamp(0.85rem, 1.25vw, 1.25rem);
     }
     p {
-        font-size: clamp(0.75rem, 1vw, 1rem);
+        font-size: clamp(0.85rem, 1vw, 1rem);
     }
     & > * {
         color: #fff;
@@ -24,6 +24,7 @@ html {
         padding: 0.55rem 1.5rem;
         border-radius: 30px;
         font-weight: 600;
+        font-size: clamp(.85rem, 1.5vw, 1.2rem);
     }
     .navbar {
         transition: all .3s;
