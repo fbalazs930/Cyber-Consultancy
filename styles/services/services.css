@@ -7,10 +7,10 @@
   overflow-x: hidden;
 }
 .services .image {
-  width: 17rem;
+  width: 18.5rem;
 }
 .services .line {
-  width: 8rem;
+  width: clamp(5rem, 15vw, 8rem);
 }
 .services .row {
   width: 70vw;
@@ -24,4 +24,7 @@
   .services .row {
     width: 90vw;
   }
+}
+.services .services-box {
+  gap: 8rem;
 }/*# sourceMappingURL=services.css.map */

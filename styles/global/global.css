@@ -1,15 +1,18 @@
-html {
-  font-family: "Poppins";
-  letter-spacing: 1.5px;
-}
 html h1 {
-  font-size: clamp(1.5rem, 5vw, 3.25rem);
+  font-size: clamp(1.5rem, 5vw, 3.75rem);
+}
+html h2 {
+  font-size: clamp(1.75rem, 5vw, 2.5rem);
+}
+html h6 {
+  font-size: clamp(0.85rem, 1.25vw, 1.25rem);
 }
 html p {
   font-size: clamp(0.75rem, 1vw, 1rem);
 }
 html > * {
   color: #fff;
+  font-family: "Jost", sans-serif;
 }
 html .logo {
   width: clamp(8rem, 22vw, 15rem);
@@ -19,10 +22,21 @@ html .btn {
   border: none;
   padding: 0.55rem 1.5rem;
   border-radius: 30px;
+  font-weight: 600;
+}
+html .navbar {
+  transition: all 0.3s;
 }
 html .navbar .navbar-toggler {
   border: none;
 }
 html .navbar .navbar-toggler:focus {
   box-shadow: none;
+}
+html .navbar .navbar-collapse ul {
+  gap: 3rem;
+  font-size: 1.25rem;
+}
+html .services p {
+  font-size: clamp(0.85rem, 2.5vw, 1.25rem);
 }/*# sourceMappingURL=global.css.map */

@@ -6,10 +6,10 @@
     justify-content: center;
     overflow-x: hidden;
     .image{
-        width: 17rem;
+        width: 18.5rem;
     }
     .line{
-        width: 8rem;
+        width: clamp(5rem, 15vw, 8rem);
     }
     .row{
         width: 70vw;
@@ -19,5 +19,8 @@
         @media only screen and (max-width:380px){
             width: 90vw;
         }
+    }
+    .services-box{
+        gap:8rem;
     }
 }
