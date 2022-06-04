@@ -1,30 +1,48 @@
 const navbar = document.querySelector('.navbar');
+const navbarCollapse = document.querySelector('.navbar-collapse');
 const navbarToggler = document.querySelector('.navbar-toggler');
 const menuIcon = document.querySelector('.menu-icon');
+const navLinks = document.querySelectorAll('.nav-link');
 let clicks = 0;
+
+const show = () => {
+  navbar.style.backgroundColor = '#490993cf';
+  menuIcon.classList.add('fa-times');
+  menuIcon.classList.remove('fa-bars');
+  navbarCollapse.classList.add('show');
+}
+const hide = () => {
+  navbar.style.backgroundColor = 'transparent';
+  menuIcon.classList.add('fa-bars');
+  menuIcon.classList.remove('fa-times');
+  navbarCollapse.classList.remove('show');
+}
+
 navbarToggler.addEventListener('click', () => {
-    if (clicks % 2 == 0) {
-        navbar.style.backgroundColor = '#490993cf';
-        menuIcon.classList.add('fa-times');
-        menuIcon.classList.remove('fa-bars');
-    }
-    else {
-        setTimeout(() => {
-            navbar.style.backgroundColor = 'transparent';
-            menuIcon.classList.add('fa-bars');
-            menuIcon.classList.remove('fa-times');
-        }, 130)
-    }
-    clicks++;
+  if (clicks % 2 == 0) {
+    show();
+  }
+  else {
+    setTimeout(() => {
+      hide();
+    }, 130)
+  }
+  clicks++;
 })
+navLinks.forEach(item => {
+  item.addEventListener('click', () => {
+    hide();
+    clicks++;
+  })
+});
 
 window.addEventListener('wheel', checkScrollDirection);
 
 function checkScrollDirection(event) {
   if (checkScrollDirectionIsUp(event)) {
-    navbar.style.opacity=1;
+    navbar.style.opacity = 1;
   } else {
-    navbar.style.opacity=0;
+    navbar.style.opacity = 0;
   }
 }
 
