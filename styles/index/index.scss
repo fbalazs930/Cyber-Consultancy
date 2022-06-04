@@ -16,7 +16,6 @@ body {
         position: relative;
         right: -110px;
         width: 38rem;
-        float: left;
     }
     .line {
         position: relative;
@@ -24,18 +23,50 @@ body {
         right: 30px;
         width: 30rem;
     }
-    .text{
-        gap:2.25rem;
+    .text {
+        gap: 2.25rem;
+    }
+   
+
+    @media only screen and (max-height: 800px) and (min-width: 992px) {
+        .work-img {
+            position: relative;
+            right: -170px;
+            width: 24rem;
+        }
+        .line {
+            position: relative;
+            right: -50px;
+            width: 20rem;
+        }
+        .home-content {
+            h1 {
+                font-size: clamp(2rem, 4vw, 2.75rem);
+            }
+        }
     }
     @media only screen and (max-height: 550px) {
-        padding:3rem 1rem;
+        padding: 3rem 1rem;
         .text {
             gap: 1rem;
         }
     }
-    @media only screen and (max-height: 350px) {
-        .text {
-            gap: .5rem;
+    @media only screen and (max-height: 450px) and (min-width: 992px) {
+        padding: 5rem 1rem;
+        .work-img {
+            position: relative;
+            right: -230px;
+            width: 15rem;
+        }
+        .line {
+            position: relative;
+            right: -140px;
+            width: 17rem;
+        }
+        .home-content {
+            h1 {
+                font-size: clamp(1.75rem, 3vw, 2.25rem);
+            }
         }
     }
 }

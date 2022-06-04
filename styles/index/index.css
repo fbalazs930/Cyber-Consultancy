@@ -18,7 +18,6 @@ body {
   position: relative;
   right: -110px;
   width: 38rem;
-  float: left;
 }
 .home .line {
   position: relative;
@@ -29,6 +28,21 @@ body {
 .home .text {
   gap: 2.25rem;
 }
+@media only screen and (max-height: 800px) and (min-width: 992px) {
+  .home .work-img {
+    position: relative;
+    right: -170px;
+    width: 24rem;
+  }
+  .home .line {
+    position: relative;
+    right: -50px;
+    width: 20rem;
+  }
+  .home .home-content h1 {
+    font-size: clamp(2rem, 4vw, 2.75rem);
+  }
+}
 @media only screen and (max-height: 550px) {
   .home {
     padding: 3rem 1rem;
@@ -37,8 +51,21 @@ body {
     gap: 1rem;
   }
 }
-@media only screen and (max-height: 350px) {
-  .home .text {
-    gap: 0.5rem;
+@media only screen and (max-height: 450px) and (min-width: 992px) {
+  .home {
+    padding: 5rem 1rem;
+  }
+  .home .work-img {
+    position: relative;
+    right: -230px;
+    width: 15rem;
+  }
+  .home .line {
+    position: relative;
+    right: -140px;
+    width: 17rem;
+  }
+  .home .home-content h1 {
+    font-size: clamp(1.75rem, 3vw, 2.25rem);
   }
 }/*# sourceMappingURL=index.css.map */
