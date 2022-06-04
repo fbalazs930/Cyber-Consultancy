@@ -25,4 +25,20 @@ body {
   top: -0.1vw;
   right: 30px;
   width: 30rem;
+}
+.home .text {
+  gap: 2.25rem;
+}
+@media only screen and (orientation: landscape) and (max-height: 550px) {
+  .home {
+    padding: 3rem 1rem;
+  }
+  .home .text {
+    gap: 1rem;
+  }
+}
+@media only screen and (orientation: landscape) and (max-height: 350px) {
+  .home .text {
+    gap: 0.5rem;
+  }
 }/*# sourceMappingURL=index.css.map */
